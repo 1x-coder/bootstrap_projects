@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&family=Work+Sans:wght@900&display=swap");
+
+body,
+html {
+  font-size: 16px;
+}
+
+.main-body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  max-height: calc(100% - 20px);
+  min-height: 100vh;
+  background: linear-gradient(1deg, #b19ff2fa, #8a6df2);
+  background-attachment: fixed;
+}
+
+.form-center {
+  margin: 0 auto;
+  padding: 30px;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 2px 2px 13px 1px rgb(0 0 0 / 16%);
+}
+
+label {
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.form-control {
+  color: hsl(0, 1%, 44%);
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.btn {
+  background: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 20px;
+  position: absolute;
+  bottom: -4.5rem;
+  right: 0;
+  transition: background 0.2s ease-out;
+  z-index: 1;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn:active {
+  background: hsl(0, 0%, 8%);
+}
+
+hr {
+  margin-top: 2rem;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+span.blanks {
+  color: #854cff;
+  font-size: 4rem;
+  font-weight: 800;
+  text-size-adjust: 80%;
+}
+
+.blanks + span {
+  font-size: 4rem;
+  font-weight: 800;
+  text-size-adjust: 80%;
+}
+
+.error,
+small {
+  color: hsl(0, 100%, 67%);
+ }
+small{
+  
+  font-size:0.8rem;
+}
+
+.error + input {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+
+@media screen and (max-width: 768px) {
+  span.blanks {
+    font-size: 3rem;
+  }
+
+  .blanks + span {
+    font-size: 3rem;
+  }
+
+  .form-center {
+    padding: 30px;
+  }
+
+  .form-control {
+    font-size: 1.5rem;
+  }
+  .button-container {
+    margin-top: 1rem;
+  }
+  .btn {
+    padding: 13px;
+    bottom: -4rem;
+  }
+  .svg-size {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .btn {
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+
+@media screen and (max-width: 417px) {
+  span.blanks {
+    font-size: 2rem;
+  }
+
+  .blanks + span {
+    font-size: 2rem;
+  }
+}

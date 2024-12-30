@@ -1,0 +1,20 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding-top: 70px;
+    overflow-x: hidden; 
+}
+
+section {
+    margin: 20px 0 20px 0;
+    padding: 30px 0 30px 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}

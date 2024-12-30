@@ -1,0 +1,23 @@
+{
+  "name": "currency-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaftab/currency-converter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khaftab/currency-converter/issues"
+  },
+  "homepage": "https://github.com/khaftab/currency-converter#readme",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}

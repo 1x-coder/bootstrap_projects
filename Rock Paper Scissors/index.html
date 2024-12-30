@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Emoji Rock, Paper, Scissors Game</title>
+    <meta charset="UTF-8" />
+    <script type="module" src="./components/gameObjects.js"></script>
+    <script type="module" src="./components/uiObjects.js"></script>
+    <script type="module" src="game.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" /> 
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center landing-screen">
+      <div class="col-sm-1">
+        <img class="img-fluid title-img" src="img/rock.png" alt="rock">
+      </div>
+      <div class="col-sm-1">
+        <img class="img-fluid title-img" src="img/paper.png" alt="paper">
+      </div>
+      <div class="col-sm-1">
+        <h1 class="sr-only">Scissors</h1>
+        <img class="img-fluid title-img" src="img/scissors.png" alt="scissors">
+      </div>
+      <div class="col-sm-1">
+        <h1 class="sr-only">Shoot</h1>
+        <img class="img-fluid title-img" src="img/shoot.png" alt="shoot">
+      </div>
+    </div>
+    <div class="row">
+      <h1 class="text-center">Rock, Paper, Scissors, Shoot</h1>
+      <p>Classic game vs. the computer with emoji interface. First to 5 points wins!</p>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="col-sm-4">
+        <button type="button" id="load-button" class="btn btn-primary btn-lg">PLAY</button>
+      </div>
+    </div>
+  </body>
+</html>

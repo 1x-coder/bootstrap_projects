@@ -1,0 +1,499 @@
+
+//---------variables----------
+$font-family: 'Inter', sans-serif;
+
+//heading styles
+$heading: (
+    font-weight: 600,
+    line-height: 110%
+);
+$heading-xl: (
+    font-size:64px
+);
+$heading-l: (
+    font-size:48px
+);
+$heading-m: (
+    font-size: 24px
+);
+$heading-s: (
+    font-size: 20px
+);
+
+//body styles
+$bodyM: (
+    font-size:16px,
+    font-weight:400,
+    line-height:150%
+);
+
+$bodyMBold: (
+    font-size:16px,
+    font-weight:600,
+    line-height:150%
+);
+$bodyS: (
+    font-size:14px,
+    font-weight:400,
+    line-height:150%
+);
+
+
+//colors
+
+$blue: #345FF6;
+$gun__metal: #253347;
+$electric__blue: #5E6E85;
+$borders: #D8E2E7;
+$white: #FFFFFF;
+$background__gradient: linear-gradient(290.1deg, rgba(214, 230, 254, 1) 0%, rgba(214, 252, 254, 0) 100%);
+$slight__gradient: linear-gradient(290.1deg, rgba(214, 230, 254, 0.3) 0%, rgba(214, 252, 254, 0) 100%);
+
+//----------effects----------
+
+$box__shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+
+
+//-----------global-----------
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    color: $gun__metal;
+}
+
+p {
+    color: $electric__blue;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    
+    
+}
+
+
+//-----------intro-----------
+
+section.top {
+    position: relative;
+}
+
+section.intro {
+    padding: 33px 24px 24px 24px;
+    text-align: center;
+    background-image: $background__gradient;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+        background-image: url(assets/images/logo.svg);
+        background-size: contain;
+        height: 40px;
+        width: 40px;
+        // margin: 0 auto;
+    }
+
+    & * {
+        margin-bottom: 24px;
+    }
+
+    h1 {
+        line-height: map-get($heading, line-height);
+        font-weight: map-get($heading, font-weight);
+        font-size: map-get($heading-l, font-size);
+    }
+
+    p {
+        margin-bottom: 10rem;
+        line-height: map-get($bodyM, line-height);
+        font-weight: map-get($bodyM, font-weight);
+        font-size: map-get($bodyM, font-size);
+    }
+}
+
+//------------calc------------
+
+
+section.calculator {
+    
+    width: auto;
+    padding: 24px;
+    margin: 0 24px 0 24px;
+    border-radius: 1rem;
+    box-shadow: $box__shadow;
+    //TESTING---------------
+    position: relative;
+    top: -9rem;
+    background-color: $white;
+
+    h1 {
+        line-height: map-get($heading, line-height);
+        font-weight: map-get($heading, font-weight);
+        font-size: map-get($heading-m, font-size);
+        text-align: center;
+    }
+
+    .form-check {
+        line-height: map-get($bodyMBold, line-height);
+        font-weight: map-get($bodyMBold, font-weight);
+        font-size: map-get($bodyMBold, font-size);
+        display: flex;
+        gap: 18px;
+        justify-content: center;
+        align-items: center;
+
+        //radios
+        .form-check-input {
+            height: 31px;
+            width: 31px;
+        }
+    }
+
+    .input__row { //for metric only, gap between inputs
+        display: flex;
+        gap: 16px;
+    }
+
+    .input-group {
+        outline: 1px solid $borders;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        //inputs
+        .form-control {
+            padding: 20px 0 20px 20px;
+            font-size: 24px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .input-group-text {
+            font-size: 24px;
+            font-weight: 600;
+            padding-right: 24px;
+            color: $blue;
+            background-color: transparent;
+            border: none;
+        }
+    }
+
+}
+
+//results
+.results__section {
+    background-color: $blue;
+    padding: 32px;
+    border-radius: 1.5rem;
+
+    .result__div {
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin-bottom: 0;
+            color: $white;
+            line-height: map-get($bodyMBold, line-height);
+            font-weight: map-get($bodyMBold, font-weight);
+            font-size: map-get($bodyMBold, font-size);
+        }
+
+        span {
+            line-height: map-get($heading, line-height);
+            font-weight: map-get($heading, font-weight);
+            font-size: map-get($heading-l, font-size);
+            color: $white;
+        }
+    }
+
+
+    .result__expl{
+
+        p {
+            line-height: map-get($bodyS, line-height);
+            font-weight: map-get($bodyS, font-weight);
+            font-size: map-get($bodyS, font-size);
+            color: $white;
+            margin-top: 24px;
+            margin-bottom: 0;
+
+            span.recommendation {
+                color: white;
+            }
+
+            span.range {
+                line-height: map-get($bodyMBold, line-height);
+                font-weight: map-get($bodyMBold, font-weight);
+                font-size: map-get($bodyMBold, font-size);
+                color: $white;
+            }
+        }
+    }
+} 
+
+//----------welcome-----------
+
+.welcome__div {
+    background-color: $blue;
+    padding: 32px;
+    border-radius: 1.5rem;
+
+    h2 {
+        line-height: map-get($heading, line-height);
+        font-weight: map-get($heading, font-weight);
+        font-size: map-get($heading-m, font-size);
+        color: $white;
+    }
+
+    p {
+        line-height: map-get($bodyS, line-height);
+        font-weight: map-get($bodyS, font-weight);
+        font-size: map-get($bodyS, font-size);
+        color: $white;
+        }
+}
+
+.curved__line {
+    background-image: url(assets/images/pattern-curved-line-left.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 8rem;
+    width: 8rem;
+    display: none;
+}
+
+//------------results means-----------
+
+.what__results__mean {
+    padding: 0;
+
+    .man__eating {
+        background-image: url(assets/images/image-man-eating.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 375px;
+        min-width: 100%;
+    }
+
+    .result__means {
+        padding: 48px 24px 74px 24px;
+
+        h3 {
+            line-height: map-get($heading, line-height);
+            font-weight: map-get($heading, font-weight);
+            font-size: 32px;
+        }
+
+        p {
+            line-height: map-get($bodyM, line-height);
+            font-weight: map-get($bodyM, font-weight);
+            font-size: map-get($bodyM, font-size);
+            margin: 0;
+        }
+    }
+}
+
+//-------------what to do------------
+
+.what__to__do {
+    
+    background-image: $slight__gradient;
+    padding: 56px 28px 56px 19px;
+
+    .do__chunk {
+
+        //icons
+        .do__icon {
+            height: 4rem;
+            width: 4rem;
+            margin-bottom: 32px;
+        }
+
+        .eat__icon {
+            background-image: url(assets/images/icon-eating.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .exercise__icon {
+            background-image: url(assets/images/icon-exercise.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .sleep__icon {
+            background-image: url(assets/images/icon-sleep.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .chunk__text {
+
+            h4 {
+                line-height: map-get($heading, line-height);
+                font-weight: map-get($heading, font-weight);
+                font-size: map-get($heading-m, font-size);
+                margin-bottom: 32px;
+            }
+
+            p {
+                line-height: map-get($bodyM, line-height);
+                font-weight: map-get($bodyM, font-weight);
+                font-size: map-get($bodyM, font-size);
+                margin-bottom: 40px;
+            }
+
+        }
+
+    }
+
+} 
+
+/* MEDIUM BREAKPOINT */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    //welcome
+    .welcome__div {
+        background-color: $blue;
+        padding: 32px;
+        border-radius: 1.5rem;
+        border-bottom-right-radius: 5rem;
+        border-top-right-radius: 5rem;
+    }
+
+    //results
+    .results__section {
+        background-color: $blue;
+        padding: 32px;
+        border-radius: 1.5rem;
+        border-bottom-right-radius: 5rem;
+        border-top-right-radius: 5rem;
+
+        .result__expl{
+            display: flex;
+            align-items: center;
+
+            p {
+                line-height: map-get($bodyS, line-height);
+                font-weight: map-get($bodyS, font-weight);
+                font-size: map-get($bodyS, font-size);
+                color: $white;
+                margin-top: auto;
+                margin-bottom: 0;
+
+                span.recommendation {
+                    color: white;
+                }
+
+                span.range {
+                    line-height: map-get($bodyMBold, line-height);
+                    font-weight: map-get($bodyMBold, font-weight);
+                    font-size: map-get($bodyMBold, font-size);
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    //what to do
+    .what__to__do {
+    
+        background-image: $slight__gradient;
+        padding: 56px 28px 56px 19px;
+        
+        .do__chunk {
+
+            display: flex;
+            gap: 40px;
+        
+            //icons
+            .do__icon {
+                display: flex;
+                height: 4rem;
+                width: 4rem;
+                margin-bottom: 0;
+                align-self: center;
+                justify-self: center;
+            }
+        }
+    }
+
+}
+
+/* LARGE BREAKPOINT */
+
+@media (min-width: 992px) {
+
+    section.top {
+    }
+
+    section.intro {
+        padding: 77px 116px;
+        max-width: 70%;
+       
+        .logo {
+            margin-bottom: 100px;
+            height: 4rem;
+            width: 4rem;
+        }
+
+        h1 {
+            width: 50%;
+
+            font-size: 64px;
+            
+        }
+
+        p {
+            
+            width: 40%;
+            margin-bottom: 150px;
+        }
+    }
+
+    section.calculator {
+        margin: auto;
+        max-width: 30%;
+        max-height: 564px;
+        
+    }
+
+    //results mean
+
+    .what__results__mean {
+        padding: 0;
+        margin-bottom: 3rem;
+
+        .means {
+            display: flex;
+
+            .result__means {
+            
+                h3 {
+                    line-height: map-get($heading, line-height);
+                    font-weight: map-get($heading, font-weight);
+                    font-size: 32px;
+                }
+
+                p {
+                    line-height: map-get($bodyM, line-height);
+                    font-weight: map-get($bodyM, font-weight);
+                    font-size: map-get($bodyM, font-size);
+                    margin: 0;
+                }
+            }
+        }   
+    }
+
+  }
+  

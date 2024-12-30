@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>CodePen - Age Calculator</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="main-body">
+  <div class="form-center">
+    <div class="container">
+      <!--       Day, month and year input Field -->
+      <form class="m-auto">
+        <div class="row">
+          <div class="col-sm-3">
+            <label class="circle" for="day">DAY</label>
+            <input type="number" class="form-control" name="day" id="day" placeholder="DD" maxlength="2">
+            <small class="day-error"></small>
+          </div>
+
+          <div class="col-sm-3">
+            <label for="month">MONTH</label>
+            <input type="number" class="form-control" name="month" id="month" placeholder="MM" maxlength="2">
+            <small class="month-error"></small>
+          </div>
+          <div class="col-sm-4">
+            <label for="year">YEAR</label>
+            <input type="number" class="form-control" name="year" id="year" placeholder="YYYY" maxlength="4">
+            <small class="year-error"></small>
+
+          </div>
+        </div>
+        <div class="container p-relative">
+          <div class="row">
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-color" name="submit" id="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 46 44" class="svg-size">
+                  <g fill="none" stroke="#FFF" stroke-width="2">
+                    <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+                  </g>
+                </svg>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+    <hr>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="year-section">
+              <span class="blanks year">- -</span>
+              <span>years</span>
+            </div>
+            <div class="month-section">
+              <span class="blanks month">- -</span>
+              <span>months</span>
+            </div>
+            <div class="day-section">
+              <span class="blanks days">- -</span>
+              <span>days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.umd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tsparticles-confetti/2.9.3/tsparticles.confetti.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

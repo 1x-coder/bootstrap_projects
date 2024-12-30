@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #253347; }
+
+p {
+  color: #5E6E85; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%; }
+
+section.top {
+  position: relative; }
+
+section.intro {
+  padding: 33px 24px 24px 24px;
+  text-align: center;
+  background-image: linear-gradient(290.1deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  section.intro .logo {
+    background-image: url(assets/images/logo.svg);
+    background-size: contain;
+    height: 40px;
+    width: 40px; }
+  section.intro * {
+    margin-bottom: 24px; }
+  section.intro h1 {
+    line-height: 110%;
+    font-weight: 600;
+    font-size: 48px; }
+  section.intro p {
+    margin-bottom: 10rem;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 16px; }
+
+section.calculator {
+  width: auto;
+  padding: 24px;
+  margin: 0 24px 0 24px;
+  border-radius: 1rem;
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+  position: relative;
+  top: -9rem;
+  background-color: #FFFFFF; }
+  section.calculator h1 {
+    line-height: 110%;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center; }
+  section.calculator .form-check {
+    line-height: 150%;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center; }
+    section.calculator .form-check .form-check-input {
+      height: 31px;
+      width: 31px; }
+  section.calculator .input__row {
+    display: flex;
+    gap: 16px; }
+  section.calculator .input-group {
+    outline: 1px solid #D8E2E7;
+    border-radius: 1rem;
+    overflow: hidden; }
+    section.calculator .input-group .form-control {
+      padding: 20px 0 20px 20px;
+      font-size: 24px;
+      font-weight: 600;
+      border: none; }
+    section.calculator .input-group .input-group-text {
+      font-size: 24px;
+      font-weight: 600;
+      padding-right: 24px;
+      color: #345FF6;
+      background-color: transparent;
+      border: none; }
+
+.results__section {
+  background-color: #345FF6;
+  padding: 32px;
+  border-radius: 1.5rem; }
+  .results__section .result__div {
+    gap: 8px;
+    display: flex;
+    flex-direction: column; }
+    .results__section .result__div p {
+      margin-bottom: 0;
+      color: #FFFFFF;
+      line-height: 150%;
+      font-weight: 600;
+      font-size: 16px; }
+    .results__section .result__div span {
+      line-height: 110%;
+      font-weight: 600;
+      font-size: 48px;
+      color: #FFFFFF; }
+  .results__section .result__expl p {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-bottom: 0; }
+    .results__section .result__expl p span.recommendation {
+      color: white; }
+    .results__section .result__expl p span.range {
+      line-height: 150%;
+      font-weight: 600;
+      font-size: 16px;
+      color: #FFFFFF; }
+
+.welcome__div {
+  background-color: #345FF6;
+  padding: 32px;
+  border-radius: 1.5rem; }
+  .welcome__div h2 {
+    line-height: 110%;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF; }
+  .welcome__div p {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF; }
+
+.curved__line {
+  background-image: url(assets/images/pattern-curved-line-left.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 8rem;
+  width: 8rem;
+  display: none; }
+
+.what__results__mean {
+  padding: 0; }
+  .what__results__mean .man__eating {
+    background-image: url(assets/images/image-man-eating.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 375px;
+    min-width: 100%; }
+  .what__results__mean .result__means {
+    padding: 48px 24px 74px 24px; }
+    .what__results__mean .result__means h3 {
+      line-height: 110%;
+      font-weight: 600;
+      font-size: 32px; }
+    .what__results__mean .result__means p {
+      line-height: 150%;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0; }
+
+.what__to__do {
+  background-image: linear-gradient(290.1deg, rgba(214, 230, 254, 0.3) 0%, rgba(214, 252, 254, 0) 100%);
+  padding: 56px 28px 56px 19px; }
+  .what__to__do .do__chunk .do__icon {
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 32px; }
+  .what__to__do .do__chunk .eat__icon {
+    background-image: url(assets/images/icon-eating.svg);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .what__to__do .do__chunk .exercise__icon {
+    background-image: url(assets/images/icon-exercise.svg);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .what__to__do .do__chunk .sleep__icon {
+    background-image: url(assets/images/icon-sleep.svg);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .what__to__do .do__chunk .chunk__text h4 {
+    line-height: 110%;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 32px; }
+  .what__to__do .do__chunk .chunk__text p {
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 40px; }
+
+/* MEDIUM BREAKPOINT */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .welcome__div {
+    background-color: #345FF6;
+    padding: 32px;
+    border-radius: 1.5rem;
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem; }
+
+  .results__section {
+    background-color: #345FF6;
+    padding: 32px;
+    border-radius: 1.5rem;
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem; }
+    .results__section .result__expl {
+      display: flex;
+      align-items: center; }
+      .results__section .result__expl p {
+        line-height: 150%;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+        margin-top: auto;
+        margin-bottom: 0; }
+        .results__section .result__expl p span.recommendation {
+          color: white; }
+        .results__section .result__expl p span.range {
+          line-height: 150%;
+          font-weight: 600;
+          font-size: 16px;
+          color: #FFFFFF; }
+
+  .what__to__do {
+    background-image: linear-gradient(290.1deg, rgba(214, 230, 254, 0.3) 0%, rgba(214, 252, 254, 0) 100%);
+    padding: 56px 28px 56px 19px; }
+    .what__to__do .do__chunk {
+      display: flex;
+      gap: 40px; }
+      .what__to__do .do__chunk .do__icon {
+        display: flex;
+        height: 4rem;
+        width: 4rem;
+        margin-bottom: 0;
+        align-self: center;
+        justify-self: center; } }
+/* LARGE BREAKPOINT */
+@media (min-width: 992px) {
+  section.intro {
+    padding: 77px 116px;
+    max-width: 70%; }
+    section.intro .logo {
+      margin-bottom: 100px;
+      height: 4rem;
+      width: 4rem; }
+    section.intro h1 {
+      width: 50%;
+      font-size: 64px; }
+    section.intro p {
+      width: 40%;
+      margin-bottom: 150px; }
+
+  section.calculator {
+    margin: auto;
+    max-width: 30%;
+    max-height: 564px; }
+
+  .what__results__mean {
+    padding: 0;
+    margin-bottom: 3rem; }
+    .what__results__mean .means {
+      display: flex; }
+      .what__results__mean .means .result__means h3 {
+        line-height: 110%;
+        font-weight: 600;
+        font-size: 32px; }
+      .what__results__mean .means .result__means p {
+        line-height: 150%;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0; } }
+
+/*# sourceMappingURL=style.css.map */

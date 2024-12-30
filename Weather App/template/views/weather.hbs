@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f18bb531091769.5640f77be2b17.png"
+    type="image/x-icon">
+</head>
+
+<body>
+    {{>navbar}}
+    <!-- main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form action="#" class="temp_form">
+
+                        <input type="text" id="cityName" placeholder="Enter City Name" autocomplete="off" style="margin-bottom: 0.5rem;">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+
+                    <div class="tempInformation">
+                        <div class="top_layer">
+                            <p id="day">Tuesday</p>
+                            <p id="today_date">19th august</p>
+                        </div>
+                        <div class="main_layer">
+                            <p id="city_name">City Name</p>
+                            <div class="middle_layer data_hide">
+                                <p id="temp"><span id="temp_val"></span><sup>0</sup>C</p>
+                                <p id="temp_status"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer code -->
+    {{>footer}}
+    <script src="js/main.js"></script>
+    <!-- bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- font-awesome link -->
+    <script src="https://kit.fontawesome.com/091ffad770.js" crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>
